@@ -310,7 +310,7 @@ namespace ManagedBass
             if (ptr == IntPtr.Zero)
                 return false;
             
-            var id3v1 = Marshal.PtrToStructure<ID3v1Tag>(ptr);
+            var id3v1 = (ID3v1Tag)Marshal.PtrToStructure(ptr, typeof(ID3v1Tag));
 
             Title = id3v1.Title;
             Artist = id3v1.Artist;
@@ -354,7 +354,7 @@ namespace ManagedBass
             if (ptr == IntPtr.Zero)
                 return false;
 
-            var tag = Marshal.PtrToStructure<BextTag>(ptr);
+            var tag = (BextTag)Marshal.PtrToStructure(ptr, typeof(BextTag));
 
             Title = tag.Description;
             Artist = tag.Originator;
