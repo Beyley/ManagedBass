@@ -76,7 +76,7 @@ namespace ManagedBass
                 "Euro-Techno",
                 "Ambient",
                 "Trip-Hop",
-                "Vocal",ost
+                "Vocal",
                 "Jazz+Funk",
                 "Fusion",
                 "Trance",
